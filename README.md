@@ -26,7 +26,7 @@ A arquitetura foi implementada no simulador SimGrid e comparada com algoritmos c
 
 ### Prerequisites
 
-This project was developed and tested using **SimGrid 4.1**. Before running the project, install SimGrid following the official installation guide:
+This project was developed and tested using **SimGrid 4.1**. Before running the project, install SimGrid by following the official installation guide:
 
 https://simgrid.org/
 
@@ -52,16 +52,36 @@ chmod +x create_project.sh
 ./create_project.sh
 ```
 
-This command creates the `tarefa3_fia_hpc` project directory and generates all required source files, build configuration, scripts, and scheduler implementations.
+This command creates the `tarefa3_fia_hpc` project directory, including all source files, scheduler implementations, build configuration, and execution scripts.
 
-### 3. Compile and execute
+### 3. Compile and run the simulations
 
 ```bash
 cd tarefa3_fia_hpc
 bash scripts/run_all.sh
 ```
 
-The script will compile the project, execute all scheduler implementations, and generate the corresponding simulation results.
+### Output
+
+After execution, the project generates one directory for each scheduling algorithm:
+
+```text
+fcfs/
+edf/
+minmin/
+ga_pure/
+rl_pure/
+adaptive/
+```
+
+Each directory contains the corresponding simulation outputs. The main results for each scheduler are stored in a file named:
+
+```text
+results.csv
+```
+
+These CSV files contain the performance metrics collected during the simulations and can be used for analysis, comparison, and visualization of the scheduling algorithms.
+
 
 
 ## Resultados
