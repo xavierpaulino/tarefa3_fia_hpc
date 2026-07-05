@@ -21,6 +21,9 @@ A arquitetura foi implementada no simulador SimGrid e comparada com algoritmos c
 - Simulated Annealing
 - Q-Learning
 
+## Resultados
+
+Os experimentos mostram que o algoritmo GA_Pure obteve o menor makespan e consumo energético, enquanto a arquitetura híbrida NSGA2_SA_RL apresentou o menor número de violações de deadlines, mantendo desempenho competitivo nas demais métricas. Os resultados demonstram que a combinação de otimização evolutiva com aprendizado por reforço é uma estratégia promissora para o escalonamento inteligente em ambientes HPC heterogêneos.
 
 ## Instructions
 
@@ -84,6 +87,3 @@ These CSV files contain the performance metrics collected during the simulations
 
 
 
-## Resultados
-
-Os experimentos mostram que o algoritmo GA_Pure obteve o menor makespan e consumo energético, enquanto a arquitetura híbrida NSGA2_SA_RL apresentou o menor número de violações de deadlines, mantendo desempenho competitivo nas demais métricas. Os resultados demonstram que a combinação de otimização evolutiva com aprendizado por reforço é uma estratégia promissora para o escalonamento inteligente em ambientes HPC heterogêneos.
