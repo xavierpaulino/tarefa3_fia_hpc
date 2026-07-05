@@ -21,6 +21,49 @@ A arquitetura foi implementada no simulador SimGrid e comparada com algoritmos c
 - Simulated Annealing
 - Q-Learning
 
+
+## Instructions
+
+### Prerequisites
+
+This project was developed and tested using **SimGrid 4.1**. Before running the project, install SimGrid following the official installation guide:
+
+https://simgrid.org/
+
+After installation, the project structure should be organized as follows:
+
+```text
+<root_directory>/
+├── simgrid/                  # SimGrid 4.1 installation
+├── create_project.sh         # Project generation script
+```
+
+The `create_project.sh` script must be placed in the **same root directory** as the SimGrid installation and executed from there.
+
+### 1. Make the script executable
+
+```bash
+chmod +x create_project.sh
+```
+
+### 2. Generate the project
+
+```bash
+./create_project.sh
+```
+
+This command creates the `tarefa3_fia_hpc` project directory and generates all required source files, build configuration, scripts, and scheduler implementations.
+
+### 3. Compile and execute
+
+```bash
+cd tarefa3_fia_hpc
+bash scripts/run_all.sh
+```
+
+The script will compile the project, execute all scheduler implementations, and generate the corresponding simulation results.
+
+
 ## Resultados
 
 Os experimentos mostram que o algoritmo GA_Pure obteve o menor makespan e consumo energético, enquanto a arquitetura híbrida NSGA2_SA_RL apresentou o menor número de violações de deadlines, mantendo desempenho competitivo nas demais métricas. Os resultados demonstram que a combinação de otimização evolutiva com aprendizado por reforço é uma estratégia promissora para o escalonamento inteligente em ambientes HPC heterogêneos.
